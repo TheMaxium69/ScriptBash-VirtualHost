@@ -13,8 +13,6 @@ APACHE_CONF="/etc/apache2/sites-available/000-default.conf"
 WEB_ROOT="/var/www/html"
 SERVER_ADMIN="officiel@tyrolium.fr"
 
-git clone https://github.com/TheMaxium69/Tyrolium-Uptime-InServer.git $WEB_ROOT
-
 # --- Étape 1 : Créer la configuration HTTP ---
 
 echo "Création du fichier de configuration Apache pour $DOMAIN_NAME (HTTP)..."
