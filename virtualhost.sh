@@ -66,10 +66,10 @@ echo "Exécution de Certbot pour obtenir un certificat SSL pour $DOMAIN_NAME..."
 sudo certbot --apache -d "$DOMAIN_NAME" --agree-tos --no-eff-email -m "$SERVER_ADMIN"
 
 # Vérifier si Certbot a réussi
-if [ ! -f "/etc/letsencrypt/live/$DOMAIN_NAME/fullchain.pem" ] || [ ! -f "/etc/letsencrypt/live/$DOMAIN_NAME/privkey.pem" ]; then
-    echo "Erreur : Certbot n'a pas pu obtenir les certificats. Veuillez vérifier les logs."
-    exit 1
-fi
+#if [ ! -f "/etc/letsencrypt/live/$DOMAIN_NAME/fullchain.pem" ] || [ ! -f "/etc/letsencrypt/live/$DOMAIN_NAME/privkey.pem" ]; then
+#    echo "Erreur : Certbot n'a pas pu obtenir les certificats. Veuillez vérifier les logs."
+#    exit 1
+#fi
 
 # --- Étape 3 : Créer la configuration SSL avec redirection ---
 
