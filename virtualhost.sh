@@ -10,7 +10,7 @@ fi
 
 DOMAIN_NAME=$1
 APACHE_CONF="/etc/apache2/sites-available/$DOMAIN_NAME.conf"
-APACHE_SSL_CONF="/etc/apache2/sites-available/$DOMAIN_NAME-le-ssl.fr.conf"
+APACHE_SSL_CONF="/etc/apache2/sites-available/$DOMAIN_NAME-le-ssl.conf"
 WEB_ROOT="/var/www/$DOMAIN_NAME"
 SERVER_ADMIN="officiel@tyrolium.fr"
 
