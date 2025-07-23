@@ -13,6 +13,8 @@ APACHE_CONF="/etc/apache2/sites-available/000-default.conf"
 WEB_ROOT="/var/www/html"
 SERVER_ADMIN="officiel@tyrolium.fr"
 
+sudo curl -o /var/www/html/index.php https://raw.githubusercontent.com/TheMaxium69/Tyrolium-Uptime-InServer/refs/heads/new/index.php
+
 # --- Étape 1 : Créer la configuration HTTP ---
 
 echo "Création du fichier de configuration Apache pour $DOMAIN_NAME (HTTP)..."
